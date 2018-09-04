@@ -5,9 +5,10 @@
     <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v0.2.2/dist/aframe-altspace-component.min.js"></script>
   </head>
   <body>
-    <a-scene altspace="usePixelScale: false" scale="1 1 1">
+    <a-scene altspace='vertical-align: bottom;'>
       <a-assets>
         <a-asset-item id="test" src="https://github.com/WR1171/project-template-aframe/blob/master/scene.gltf"></a-asset-item>
+        <a-animation to='0 360 0' easing='linear' dur='20000' repeat='indefinite'/>
       </a-assets>
       
     </a-scene>
