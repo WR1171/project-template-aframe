@@ -8,7 +8,7 @@
 
     <!-- preload all our textures -->
     <a-assets>
-        <a-asset-item id="test" src="/scene.gltf"></a-asset-item>
+        <a-asset-item id="test" src='https://github.com/WR1171/project-template-aframe/blob/master/scene.gltf'></a-asset-item>
     </a-assets>
 
     <!-- add the moon to the scene -->
@@ -22,7 +22,10 @@
 
     <!-- add a view camera (2d only) -->
     
-        <a-entity gltf-model="#test"></a-entity>
+       <!-- add a view camera (2d only) -->
+    <a-entity position='0 0 2'>
+        <a-camera></a-camera>
+    </a-entity>
        
 
 </a-scene>
