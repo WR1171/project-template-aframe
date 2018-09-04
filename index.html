@@ -6,17 +6,17 @@
 		<script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v1.0.0/dist/aframe-altspace-component.min.js"></script>
 	</head>
 	<body>
-		<a-scene altspace='vertical-align: bottom;'>
+		<a-scene altspace="usePixelScale: false" scale="1 1 1">
 		
 			<a-assets>
 					    <a-asset-item id="test" src="scene.gltf"></a-asset-item>
 			</a-assets>
 			
-			<a-box color='#441877' position='0 1.5 0'></a-box>
+			<a-collada-model src="#test" position="0 0 0" rotation="0 0 0" scale="1 1 1"></a-collada-model>
 			
-			<a-entity position='0 0 1.5'>
-				<a-camera />
-			</a-entity>
+			
+				
+			
 		</a-scene>
 	</body>
 </html>
