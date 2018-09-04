@@ -1,16 +1,22 @@
-<html>
-  <head>
-    <title>A-Frame Collada Previewer</title>
-    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v0.2.2/dist/aframe-altspace-component.min.js"></script>
-  </head>
-  <body>
-    <a-scene altspace='vertical-align: bottom;'>
-      <a-assets>
-<a-entity gltf-model="url(https://github.com/WR1171/project-template-aframe/blob/master/scene.gltf)"></a-entity>       
-      </a-assets>
-     
-      
-    </a-scene>
-  </body>
-</html>
+<!DOCTYPE html>
+<html><body>
+<script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/AltspaceVR/AltspaceSDK/v2.0.2/dist/altspace.min.js"></script>
+
+<!-- set up the scene -->
+<a-scene altspace='vertical-align: bottom;'>
+
+    <!-- preload all our textures -->
+    <a-assets>
+       <a-asset-item id="test" src='https://github.com/WR1171/project-template-aframe/blob/master/scene.gltf'></a-asset-item> 
+    </a-assets>
+
+    
+    <a-entity gltf-model="#tree"></a-entity>
+
+</a-scene>
+
+</body></html>
+
+
+
